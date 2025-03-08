@@ -88,7 +88,7 @@ class UserService {
     if (!errors.password && !passwordRegex.length.test(password)) {
       errors.password = "Password must be at least 8 characters long";
     } else if (!passwordRegex.number.test(password)) {
-      errors.password = "Password must contain only a number";
+      errors.password = "Password must contain a number";
     } else if (!passwordRegex.uppercase.test(password)) {
       errors.password = "Password must contain at least one uppercase letter";
     } else if (!passwordRegex.specialChar.test(password)) {
